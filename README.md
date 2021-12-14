@@ -3,7 +3,7 @@
 ### Team name: AGVENTURE
 
 ## Team members
-* SANKET HAKE - sankethake4847gmail.com
+* SANKET HAKE - sankethake4847@gmail.com
 * ATHARVA YESANSURE - atharvayesansure812@gmail.com
 
 
