@@ -20,15 +20,8 @@ And this app gives a platform to the farmers and nursery owners to sell their pr
 * This is a flutter app made by our team AGVENTURE. 
 * The first page of our app consists of two buttons i.e. BUYER & SELLER.
 * The seller can easily upload their products and the buyer can easily buy those products.
+* Agventure will help to both buyer and seller, buyer can buy any products online and can also see which products are present in his nearby nursery . He can register in agventure can add his nursery and product
 
-Add your project description here. Your project description should cover how your website/app works. That way you can convey what your project is without the need for anyone to view the code. A more detailed readme in your project repository is encouraged, which can include build and use instructions etc.
-
-* Use bullet points for any feature descriptions you may want to add
-
-
-Don't forget to replace the link here with **_your own Github repository_** link.
-
-Along with this, add the link of the drive folder that contains the app APK/Screenshots/Screen Recordings. If you have hosted your project on the web, add that link as well.
 
 * GitHub repo link: [Link to repository](https://github.com/your-repo-link)
 * Drive link: [Drive link here](https://drive.google.com/)
@@ -55,19 +48,11 @@ Tools and technologies that you learnt and used in the project.
 - [ ] CART PAGE
 - [ ] CHECKOUT PAGE
 
-List down all the tasks/features for your project and cross out the ones which are completed.
-
-## Project Setup
->Include your project setup basics here. Steps for how someone else can setup your project on their machine. Add any relevant details as well.
-
-## Usage
->Steps to run your project once its setup. If you have an app or website, list how the user can go about using it.
-
 ## Applications
->How can your project do its part in solving a real-life problem? What are its possible applications? Describe here.
-
+>Agventure will help both the buyer as well as the seller, buyer can buy any products online and can also see which products are present in his nearby nursery . The seller can register in this app and can add his/her nursery and product.
 ## Future scope
->Mention ways in which the project can be improved and built upon in the future.
+>1. Online Payment Feature
+>2. Order Tracker
 
 ## Screenshots
 Add a few screenshots for parts of the project completed till now to give the viewer a quick idea of what your project looks like. After all, a picture speaks a thousand words.
