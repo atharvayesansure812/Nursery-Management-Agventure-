@@ -3,7 +3,7 @@
 ### Team name: AGVENTURE
 
 ## Team members
-* SANKET HAKE - sankethake48472gmail.com
+* SANKET HAKE - sankethake4847gmail.com
 * ATHARVA YESANSURE - atharvayesansure812@gmail.com
 
 
@@ -12,8 +12,14 @@
 * SHIVAM PAWAR
 * SUDHANSHU
 
-## Description
+## OUR GOAL:
+Our goal is to support thousands of smallholder farmers and plant nursery owners across India, by providing them with a app who can sell their crops and various plants.
+And this app gives a platform to the farmers and nursery owners to sell their products directly to the consumers.
 
+## Description
+* This is a flutter app made by our team AGVENTURE. 
+* The first page of our app consists of two buttons i.e. BUYER & SELLER.
+* The seller can easily upload their products and the buyer can easily buy those products.
 
 Add your project description here. Your project description should cover how your website/app works. That way you can convey what your project is without the need for anyone to view the code. A more detailed readme in your project repository is encouraged, which can include build and use instructions etc.
 
@@ -26,24 +32,28 @@ Along with this, add the link of the drive folder that contains the app APK/Scre
 
 * GitHub repo link: [Link to repository](https://github.com/your-repo-link)
 * Drive link: [Drive link here](https://drive.google.com/)
-* Website link: [Website link here](www.google.com) (for final submission, optional)
+
 
 ## Technology stack
 
 Tools and technologies that you learnt and used in the project.
 
-1. Language-1
-2. Language-2
-3. Framework-1
-4. Framework-2 (Add or remove as required)
+1. Language- Dart
+2. Framework- Flutter
+3. Firebase
 
 ## Progress
 
-- [x] Feature 1
-- [x] Feature 2
-- [x] Feature 3
-- [ ] Feature 4
-- [ ] Feature 5
+- [x] WELCOME PAGE
+- [x] LOGIN PAGE
+- [x] SIGNUP PAGE
+- [x] PROFILE BAR
+- [X] SEARCH BAR
+- [X] CATEGORY(GRID VIEW) OF NURSERIES
+- [X] CATEGORY(GRID VIEW) OF PLANTS
+- [X] INDIVIDUAL PAGES FOR PRODUCTS WITH DESCRIPTION
+- [ ] CART PAGE
+- [ ] CHECKOUT PAGE
 
 List down all the tasks/features for your project and cross out the ones which are completed.
 
