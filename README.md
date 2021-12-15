@@ -56,9 +56,14 @@ Tools and technologies that you learnt and used in the project.
 
 ## Screenshots
 <img src="https://drive.google.com/uc?export=view&id=1Bt9RXFKUrV7coV8rwiAv5VzEjPJgD83I"  width="250" height="540"/>
-<img src= "https://drive.google.com/file/d/1hJTn4NmvdO4gM8azqsoBpbVXqbrfasKU/view?usp=sharing"  width="250" height="540"/>
-<img src="https://drive.google.com/uc?export=view&id=1HOYYWjWORxUBWdk6LCE6GkOl7870_-Pt"  width="250" height="540"/>
-<img src= "https://drive.google.com/uc?export=view&id=1WS47bebKc_j37O2a_du-n7qW3bqd3KRd"  width="250" height="540"/> 
-<img src="https://drive.google.com/uc?export=view&id=1dL1K-2thIS8cEIemqvfrgstlcEfWRU6D"  width="250" height="540"/> 
-<img src="https://drive.google.com/uc?export=view&id=1lnTzSbOKHd8iBrcSulAT7F1ATR8RtC_d"  width="250" height="540"/>
-<img src="https://drive.google.com/uc?export=view&id=1THxL3uK4qwNqeI-3EpFd9oxe_HKvwsHH"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1mwxqDBMV-EDINs48DQlzN7mXQk13LAR1"  width="250" height="540"/>  <img src="https://drive.google.com/uc?export=view&id=1pxRHkkTY2aIedaYKcOt-JRJNjCWBn-eA"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1vUBVd5IZxASlvNkwNKRtHUa4rfIQx4Mv"  width="250" height="540"/> <img src="https://drive.google.com/uc?export=view&id=1iTu-vaEoZ_F4up56dBP5vznerTP5SkMT"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1zK1lmTepQ5jLBUibRRd6B1N2WHz6_BrK"  width="250" height="540"/> <img src="https://drive.google.com/uc?export=view&id=1yLRsn2nbyNysJ6DsY5i0oC8mrMpsLSo1"  width="250" height="540"/>   <img src="https://drive.google.com/uc?export=view&id=1uLG3UFh1EuncRPm1GemzDMn6FGxVAoc9"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1D3haTrlrf9d0m0QdPfpg-vioiZ1-OE1t"  width="250" height="540"/>
+<img src= "https://drive.google.com/uc?export=view&id=18jnyJODhXE-5dP28wvn3nluNA8GMy3fN"  width="250" height="540"/> 
+<img src="https://drive.google.com/uc?export=view&id=1hJTn4NmvdO4gM8azqsoBpbVXqbrfasKU"  width="250" height="540"/> 
+<img src="https://drive.google.com/uc?export=view&id=137MbPUyAUuRsxNLzmi5vucEhaCPnbHp0"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1mojHoy0TrcEN4wTUfFeS_tT577vNoSBU"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1X7yr-PRQIUEGxW26eWpMTxJ3y-dCtBtB"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1b3Dx9TWyVRkhlGCFrty_nXEsRiKsKLRi"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+
+
