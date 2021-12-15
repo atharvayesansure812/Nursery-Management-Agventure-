@@ -23,7 +23,7 @@ And this app gives a platform to the farmers and nursery owners to sell their pr
 * Agventure will help to both buyer and seller, buyer can buy any products online and can also see which products are present in his nearby nursery . He can register in agventure can add his nursery and product
 
 
-* GitHub repo link: [Link to repository](https://github.com/your-repo-link)
+* GitHub repo link: [Link to repository](https://github.com/atharvayesansure812/Nursery-Management-Agventure-)
 * Drive link: [Drive link here](https://drive.google.com/drive/folders/1ezwK5srujWD41gDbZ-5r0er55greIEVU?usp=sharing/)
 
 
