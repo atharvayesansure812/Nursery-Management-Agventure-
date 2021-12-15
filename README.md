@@ -55,11 +55,10 @@ Tools and technologies that you learnt and used in the project.
 >2. Order Tracker
 
 ## Screenshots
-Add a few screenshots for parts of the project completed till now to give the viewer a quick idea of what your project looks like. After all, a picture speaks a thousand words.
-
-You'll have to link the screenshots from your drive folder here.
-
-![Screenshot alt text](https://thecodinglove.com/wp-content/uploads/2019/03/img_0846.jpg "Here is a screenshot")
-
-Use this template as a guide for writing your documentation. Feel free to customize and adapt it for you project.
-For more Markdown syntax help, visit [here](https://www.markdownguide.org/basic-syntax/)
+<img src="https://drive.google.com/uc?export=view&id=1Bt9RXFKUrV7coV8rwiAv5VzEjPJgD83I"  width="250" height="540"/>
+<img src= "https://drive.google.com/uc?export=view&id=1jZJgw0W8Ui_yrEFQOzuE5-_cE4jSA08D"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1HOYYWjWORxUBWdk6LCE6GkOl7870_-Pt"  width="250" height="540"/>
+<img src= "https://drive.google.com/uc?export=view&id=1WS47bebKc_j37O2a_du-n7qW3bqd3KRd"  width="250" height="540"/> 
+<img src="https://drive.google.com/uc?export=view&id=1dL1K-2thIS8cEIemqvfrgstlcEfWRU6D"  width="250" height="540"/> 
+<img src="https://drive.google.com/uc?export=view&id=1lnTzSbOKHd8iBrcSulAT7F1ATR8RtC_d"  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1THxL3uK4qwNqeI-3EpFd9oxe_HKvwsHH"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1mwxqDBMV-EDINs48DQlzN7mXQk13LAR1"  width="250" height="540"/>  <img src="https://drive.google.com/uc?export=view&id=1pxRHkkTY2aIedaYKcOt-JRJNjCWBn-eA"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1vUBVd5IZxASlvNkwNKRtHUa4rfIQx4Mv"  width="250" height="540"/> <img src="https://drive.google.com/uc?export=view&id=1iTu-vaEoZ_F4up56dBP5vznerTP5SkMT"  width="250" height="540"/> <img src= "https://drive.google.com/uc?export=view&id=1zK1lmTepQ5jLBUibRRd6B1N2WHz6_BrK"  width="250" height="540"/> <img src="https://drive.google.com/uc?export=view&id=1yLRsn2nbyNysJ6DsY5i0oC8mrMpsLSo1"  width="250" height="540"/>   <img src="https://drive.google.com/uc?export=view&id=1uLG3UFh1EuncRPm1GemzDMn6FGxVAoc9"  width="250" height="540"/>
