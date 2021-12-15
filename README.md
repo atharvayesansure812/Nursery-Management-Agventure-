@@ -63,7 +63,6 @@ Tools and technologies that you learnt and used in the project.
 <img src="https://drive.google.com/uc?export=view&id=1mojHoy0TrcEN4wTUfFeS_tT577vNoSBU"  width="250" height="540"/>
 <img src="https://drive.google.com/uc?export=view&id=1X7yr-PRQIUEGxW26eWpMTxJ3y-dCtBtB"  width="250" height="540"/>
 <img src="https://drive.google.com/uc?export=view&id=1b3Dx9TWyVRkhlGCFrty_nXEsRiKsKLRi"  width="250" height="540"/>
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1mejx5F08zjImgoClqjcIrDJp36C8XzJt"  width="250" height="540"/>
 
 
