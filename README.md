@@ -24,7 +24,7 @@ And this app gives a platform to the farmers and nursery owners to sell their pr
 
 
 * GitHub repo link: [Link to repository](https://github.com/your-repo-link)
-* Drive link: [Drive link here](https://drive.google.com/)
+* Drive link: [Drive link here](https://drive.google.com/drive/folders/1ezwK5srujWD41gDbZ-5r0er55greIEVU?usp=sharing/)
 
 
 ## Technology stack
