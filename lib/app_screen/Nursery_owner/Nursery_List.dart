@@ -2,9 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 import 'package:sanket/model/category.dart';
 
-class O_Nursery_List extends StatelessWidget {
-  //
-  bool selected = false;
+class O_Nursery_List extends StatefulWidget {
+  @override
+  State<O_Nursery_List> createState() => _O_Nursery_ListState();
+}
+
+class _O_Nursery_ListState extends State<O_Nursery_List> {
+  int selected = -1;
 
   @override
   Widget build(BuildContext context) {
@@ -31,20 +35,28 @@ class O_Nursery_List extends StatelessWidget {
           //     "https://assets8.lottiefiles.com/packages/lf20_ge6ykru0.json"),
 
           GridView.builder(
-              itemCount: 5,
+              itemCount: 6,
               scrollDirection: Axis.vertical,
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                   crossAxisCount: 2, mainAxisSpacing: 5, crossAxisSpacing: 0),
               itemBuilder: (context, index) {
-                return InkWell(
+                return GestureDetector(
                   onTap: () {
-                    // Navigator.pushNamed(context, "/Nursery");
+                    setState(() {
+                      selected = index;
+                    });
                   },
                   child: Card(
                       margin: EdgeInsets.all(10),
-                      shape: RoundedRectangleBorder(
-                          side: new BorderSide(color: Colors.green, width: 3.0),
-                          borderRadius: BorderRadius.circular(40)),
+                      shape: selected == index
+                          ? RoundedRectangleBorder(
+                              side: new BorderSide(
+                                  color: Colors.green, width: 3.0),
+                              borderRadius: BorderRadius.circular(40))
+                          : RoundedRectangleBorder(
+                              side: new BorderSide(
+                                  color: Colors.white, width: 3.0),
+                              borderRadius: BorderRadius.circular(40)),
                       elevation: 20,
                       shadowColor: Colors.green,
                       child: GridTile(
@@ -62,8 +74,6 @@ class O_Nursery_List extends StatelessWidget {
                             fontSize: 15, fontWeight: FontWeight.bold),
                       )))),
                 );
-
-                // ignore: unused_local_variable
               }),
     );
   }

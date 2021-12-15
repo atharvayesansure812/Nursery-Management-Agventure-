@@ -11,6 +11,7 @@ import 'package:sanket/app_screen/Nursery_owner/User/Nursry_Home.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/plants_detail.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/productspage.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/search_By_Plant.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/Cart.dart';
 import 'package:sanket/rough_screen/productdetail.dart';
 import 'package:sanket/rough_screen/plants.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/registration.dart';
@@ -21,6 +22,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'app_screen/Nursery_owner/Nursery_List.dart';
 import 'app_screen/Nursery_owner/Nursery_Regestration.dart';
+import 'app_screen/Nursery_owner/User/ContactUS.dart';
 import 'rough_screen/detailsofproduct.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 
@@ -60,8 +62,10 @@ class MyApp extends StatelessWidget {
             // debugShowCheckedModeBanner: false,
             // initialRoute: '/',
             routes: {
-              '/': (context) => Choose(),
+              '/Cart': (context) => Atharv(),
+              '/': (context) => SplashScreen(),
               '/Login_page_User': (context) => login_page(),
+              '/ContactUs': (context) => ContactUs(),
               '/login_page_Owner': (context) => login_page_Owner(),
               '/addproduct': (context) => Add_Producct(),
               '/Nursery': (context) => home_Nursery(),

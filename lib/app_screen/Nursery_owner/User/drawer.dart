@@ -64,13 +64,18 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
-              leading: Icon(Icons.add_shopping_cart),
-              tileColor: Colors.blue[200],
-              title: Text(
-                "My Orders",
-                style: TextStyle(
-                  fontSize: 17,
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "/Cart");
+              },
+              child: ListTile(
+                leading: Icon(Icons.add_shopping_cart),
+                tileColor: Colors.blue[200],
+                title: Text(
+                  "My Cart",
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
                 ),
               ),
             ),
@@ -86,13 +91,18 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
-              leading: Icon(Icons.call),
-              tileColor: Colors.blue[200],
-              title: Text(
-                "Contact Us",
-                style: TextStyle(
-                  fontSize: 17,
+            InkWell(
+              onTap: () {
+                Navigator.popAndPushNamed(context, "/ContactUs");
+              },
+              child: ListTile(
+                leading: Icon(Icons.call),
+                tileColor: Colors.blue[200],
+                title: Text(
+                  "Contact Us",
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
                 ),
               ),
             ),
@@ -108,7 +118,7 @@ class MainDrawer extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "/");
+                Navigator.pushNamed(context, "/Login_page_User");
               },
               child: ListTile(
                 leading: Icon(

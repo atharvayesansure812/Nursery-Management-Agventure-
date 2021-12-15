@@ -52,8 +52,16 @@ List<String> Nursery_Name = [
   "Tanuja Hightech\n        Nursery",
   "Evergreen Nursery",
   "Paradise Nursery",
-  "Garden Gate"
+  "Garden Gate",
+  "Harmony"
 ];
+final List cart = [
+  "https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg",
+  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mango_4.jpg/580px-Mango_4.jpg",
+  "https://images.all-free-download.com/images/graphicthumb/eggplant_01_hq_pictures_168421.jpg",
+  "https://st.depositphotos.com/1642482/2529/i/600/depositphotos_25296471-stock-photo-corn.jpg"
+];
+List<String> cart_Name = ["Tomato", "Mango", "Brinjal", "Corn"];
 
 // List BlossomValley = [
 //   {
