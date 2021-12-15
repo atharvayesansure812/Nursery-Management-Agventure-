@@ -57,20 +57,28 @@ Tools and technologies that you learnt and used in the project.
 ## Screenshots
 ## FIRST PAGE
 <img src="https://drive.google.com/uc?export=view&id=1Bt9RXFKUrV7coV8rwiAv5VzEjPJgD83I"  width="250" height="540"/>
+
 ## LOGIN PAGE
 <img src="https://drive.google.com/uc?export=view&id=1D3haTrlrf9d0m0QdPfpg-vioiZ1-OE1t"  width="250" height="540"/>
+
 ## SIGNUP PAGE
 <img src= "https://drive.google.com/uc?export=view&id=18jnyJODhXE-5dP28wvn3nluNA8GMy3fN"  width="250" height="540"/> 
+
 ## CATEGORY
 <img src="https://drive.google.com/uc?export=view&id=1hJTn4NmvdO4gM8azqsoBpbVXqbrfasKU"  width="250" height="540"/>
+
 ## UNDER CATEGORY
 <img src="https://drive.google.com/uc?export=view&id=137MbPUyAUuRsxNLzmi5vucEhaCPnbHp0"  width="250" height="540"/>
+
 ## PROFILE PAGE
 <img src="https://drive.google.com/uc?export=view&id=1mojHoy0TrcEN4wTUfFeS_tT577vNoSBU"  width="250" height="540"/>
+
 ## NURSERY REGISTRATION
 <img src="https://drive.google.com/uc?export=view&id=1X7yr-PRQIUEGxW26eWpMTxJ3y-dCtBtB"  width="250" height="540"/>
+
 ## SEARCHBOX
 <img src="https://drive.google.com/uc?export=view&id=1b3Dx9TWyVRkhlGCFrty_nXEsRiKsKLRi"  width="250" height="540"/>
+
 ## CART
 <img src="https://drive.google.com/uc?export=view&id=1mejx5F08zjImgoClqjcIrDJp36C8XzJt"  width="250" height="540"/>
 
