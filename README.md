@@ -43,41 +43,42 @@ Tools and technologies that you learnt and used in the project.
 >2. Order Tracker
 
 ## Screenshots
-## FIRST PAGE
+## FIRST PAGE: HOME PAGE
 <img src="https://drive.google.com/uc?export=view&id=1RxvzLnxvH2qJUJIbm6VBCfZ3BXalOfHk"  width="250" height="540"/>
 
-## SECOND PAGE
+## SECOND PAGE: BUYER SECTION
 <img src="https://drive.google.com/uc?export=view&id=1zEWhzyXc6ogPXW1u9exKm8jUZ30AAtsJ"  width="250" height="540"/>
 
-## THIRD PAGE
+## THIRD PAGE: FORGOT PASSWORD
 <img src= "https://drive.google.com/uc?export=view&id=1CS7d5IgrUHP5vGraP-EbEgmRvC9KIrd2"  width="250" height="540"/> 
 
-## FOURTH PAGE
+## FOURTH PAGE: REGISTRATION 
 <img src="https://drive.google.com/uc?export=view&id=1iy08rrlVvYbJpahBeBi1REUr0nT-NyoE"  width="250" height="540"/>
 
-## FIFTH PAGE
+## FIFTH PAGE: HOME(BUYER)
 <img src="https://drive.google.com/uc?export=view&id=1JgeJlrgdxMcIXkn8PiSq_vYz3ie4h90p"  width="250" height="540"/>
 
-## SIXTH PAGE
+## SIXTH PAGE:  ACCOUNT INFORMATION
 <img src="https://drive.google.com/uc?export=view&id=18rZh-67B0BgF62tLy5ucT4LgB-Xx9UWC"  width="250" height="540"/>
 
-## SEVENTH PAGE
+## SEVENTH PAGE: PRODUCTS PAGE
 <img src="https://drive.google.com/uc?export=view&id=19tJLkFH-ZqTkP-Mg20NV4tTu1KgvX0K6"  width="250" height="540"/>
 
-## EIGHTH PAGE
+## EIGHTH PAGE: PRODUCT DETAIL
 <img src="https://drive.google.com/uc?export=view&id=1k-JtxJU8IhUjont821eGa2gWRwJSONu_"  width="250" height="540"/>
 
-## NINTH PAGE
+## NINTH PAGE: ORDER SUMMARY
 <img src="https://drive.google.com/uc?export=view&id=1ARLEDFsCAhXEEjQvV35KghhYSy_CIlTs"  width="250" height="540"/>
 
-## TENTH PAGE
+## TENTH PAGE: DRAWER
 <img src="https://drive.google.com/uc?export=view&id=1qfzznt8k_CWCZJXV0IxrLshAe5iqdNmh"  width="250" height="540"/>
 
-## ELEVENTH PAGE
+## ELEVENTH PAGE: SHOPPING CART
 <img src="https://drive.google.com/uc?export=view&id=1RuDNGKpOy8RVes8Wge9fywaNx6HDit6g"  width="250" height="540"/>
 
-## TWELFTH PAGE
+## TWELFTH PAGE: ORDERED ITEMS
 <img src= "https://drive.google.com/uc?export=view&id=11LJSnV-VZ5K8t0qomPvFRuT8NHdNx7ZM"  width="250" height="540"/> 
+
 
 ## THIRTEENTH PAGE
 <img src="https://drive.google.com/uc?export=view&id=1ukaIe7CV2E5ezVnDN-P3nRTyfl-ZGxSD"  width="250" height="540"/>
