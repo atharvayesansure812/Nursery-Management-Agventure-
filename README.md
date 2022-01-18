@@ -46,6 +46,8 @@ Tools and technologies that you learnt and used in the project.
 ## FIRST PAGE: HOME PAGE
 <img src="https://drive.google.com/uc?export=view&id=1RxvzLnxvH2qJUJIbm6VBCfZ3BXalOfHk"  width="250" height="540"/>
 
+<img src="https://drive.google.com/uc?export=view&id=14DIRqoa52If8nPx_C3qYvh7bg-4kCE6p"  width="700" height="125"/>
+
 ## SECOND PAGE: BUYER SECTION
 <img src="https://drive.google.com/uc?export=view&id=1zEWhzyXc6ogPXW1u9exKm8jUZ30AAtsJ"  width="250" height="540"/>
 
@@ -79,6 +81,7 @@ Tools and technologies that you learnt and used in the project.
 ## TWELFTH PAGE: ORDERED ITEMS
 <img src= "https://drive.google.com/uc?export=view&id=11LJSnV-VZ5K8t0qomPvFRuT8NHdNx7ZM"  width="250" height="540"/> 
 
+<img src= "https://drive.google.com/uc?export=view&id=10DmTGidRXXerEZ5uhlmMupOeYHslfbAB"  width="700" height="125"/> 
 
 ## THIRTEENTH PAGE
 <img src="https://drive.google.com/uc?export=view&id=1ukaIe7CV2E5ezVnDN-P3nRTyfl-ZGxSD"  width="250" height="540"/>
