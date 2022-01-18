@@ -27,10 +27,12 @@ class _home_NurseryState extends State<home_Nursery>
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.green,
-          title: Text(
-            "Nurseries",
-            style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-          ),
+          elevation: 30,
+          title: Center(child: Text("Grab your products")),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(20),
+                  bottomRight: Radius.circular(20))),
           bottom: TabBar(isScrollable: true, controller: _controller, tabs: [
             Tab(text: "Blossom Valley "),
             Tab(text: "Tanuja Hightech"),

@@ -7,12 +7,16 @@ class registration_page extends StatelessWidget {
   @override
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   final CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("user");
+      FirebaseFirestore.instance.collection("User");
+
+  FirebaseAuth _auth = FirebaseAuth.instance;
   final TextEditingController _textEditingController1 = TextEditingController();
   final TextEditingController _textEditingController2 = TextEditingController();
   final TextEditingController _textEditingController3 = TextEditingController();
   final TextEditingController _textEditingController4 = TextEditingController();
   final TextEditingController _textEditingController5 = TextEditingController();
+  final TextEditingController _textEditingController6 = TextEditingController();
+  final TextEditingController _textEditingController7 = TextEditingController();
   Widget build(BuildContext context) {
     String email = "";
     String password = "";
@@ -20,8 +24,8 @@ class registration_page extends StatelessWidget {
       appBar: AppBar(
           backgroundColor: Colors.green,
           title: Container(
-            padding: EdgeInsets.only(right: 1, left: 24),
-            child: Text("REGSTRATION",
+            padding: EdgeInsets.only(right: 1, left: 0),
+            child: Text("Registration",
                 style: TextStyle(
                   fontSize: 23,
                   fontWeight: FontWeight.bold,
@@ -33,25 +37,26 @@ class registration_page extends StatelessWidget {
                   bottomRight: Radius.circular(30)))),
       body: FadeInDownBig(
         child: ListView(
+          padding: EdgeInsets.only(left: 10, right: 10),
           children: [
             Container(
                 child: Column(
               children: [
                 SizedBox(
-                  height: 50,
+                  height: 30,
                 ),
                 Center(
                     child: Column(children: [
-                  Text('Create Account',
+                  Text('Create Your Account',
                       style: TextStyle(
-                        fontSize: 30,
+                        fontSize: 33,
                         fontWeight: FontWeight.bold,
                       )),
                   Padding(
                     padding: const EdgeInsets.all(10.0),
                     child: Text('Create a new account',
                         style: TextStyle(
-                          fontSize: 15,
+                          fontSize: 20,
                         )),
                   ),
                   SizedBox(
@@ -97,6 +102,13 @@ class registration_page extends StatelessWidget {
                           contentPadding: EdgeInsets.symmetric(horizontal: 20)),
                     ),
                   ),
+                  register("Image", "Paste your image url", false,
+                      Icon(Icons.lock), "", _textEditingController7),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  register("Address", "Enter your address", false,
+                      Icon(Icons.location_city), "", _textEditingController6),
                   SizedBox(
                     height: 10,
                   ),
@@ -133,24 +145,10 @@ class registration_page extends StatelessWidget {
                   SizedBox(
                     height: 10,
                   ),
-                  register(
-                      "Confirm Password",
-                      "Confirmed Your Password",
-                      true,
-                      Icon(Icons.password_outlined),
-                      "confirmedp",
-                      _textEditingController5),
-                  SizedBox(
-                    height: 30,
-                  ),
+                  register("Confirm Password", "Confirmed Your Password", true,
+                      Icon(Icons.lock), "confirmedp", _textEditingController5),
                   InkWell(
                     onTap: () async {
-                      await collectionReference.add({
-                        'Name': _textEditingController1.text,
-                        'MObile No': _textEditingController2.text,
-                        'email': _textEditingController3.text,
-                        'password': _textEditingController4.text
-                      }).then((value) => _textEditingController1.clear());
                       try {
                         UserCredential userCredential = await FirebaseAuth
                             .instance
@@ -170,6 +168,17 @@ class registration_page extends StatelessWidget {
                       } catch (e) {
                         print(e);
                       }
+                      await collectionReference
+                          .doc(_auth.currentUser!.uid)
+                          .set({
+                        'Name': _textEditingController1.text,
+                        'MObile No': _textEditingController2.text,
+                        'email': _textEditingController3.text,
+                        'Image': _textEditingController7.text,
+                        'password': _textEditingController4.text,
+                        'Address': _textEditingController6.text,
+                        "uid": _auth.currentUser!.uid
+                      }).then((value) => _textEditingController1.clear());
                       // setState(() async {
                       //
                       // });
@@ -205,7 +214,7 @@ class registration_page extends StatelessWidget {
 Widget register(String labelText, String hintText, bool x, Icon myicon,
     String y, TextEditingController z) {
   return Container(
-    height: 60,
+    height: 55,
     width: 380,
     decoration: BoxDecoration(
       borderRadius: BorderRadius.circular(10),

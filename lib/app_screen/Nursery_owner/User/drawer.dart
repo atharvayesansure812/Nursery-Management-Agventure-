@@ -1,3 +1,4 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -5,6 +6,11 @@ import 'package:flutter/material.dart';
 class MainDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    CollectionReference users = FirebaseFirestore.instance.collection('User');
+    FirebaseAuth _auth = FirebaseAuth.instance;
+
+    final uid = _auth.currentUser!.uid;
+    print(uid);
     return Scaffold(
       body: Drawer(
           child: Container(
@@ -16,31 +22,69 @@ class MainDrawer extends StatelessWidget {
                 padding: EdgeInsets.all(20),
                 child: Center(
                   child: Column(children: <Widget>[
-                    Container(
-                      width: 200,
-                      height: 200,
-                      decoration: BoxDecoration(
-                        shape: BoxShape.circle,
-                        color: Colors.orange,
-                        image: DecorationImage(
-                          image: AssetImage('assets/images/Sanket.jpeg'),
-                          fit: BoxFit.fill,
-                        ),
-                      ),
+                    FutureBuilder<DocumentSnapshot>(
+                      future: users.doc(uid).get(),
+                      builder: (BuildContext context,
+                          AsyncSnapshot<DocumentSnapshot> snapshot) {
+                        if (snapshot.hasError) {
+                          return Text("Something went wrong");
+                        }
+
+                        if (snapshot.hasData && !snapshot.data!.exists) {
+                          return Text("Document does not exist");
+                        }
+
+                        if (snapshot.connectionState == ConnectionState.done) {
+                          Map<String, dynamic> data =
+                              snapshot.data!.data() as Map<String, dynamic>;
+
+                          return ClipRect(
+                            child: Container(
+                              width: 200,
+                              height: 200,
+                              decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.orange,
+                                image: DecorationImage(
+                                  image: NetworkImage("${data['Image']}"),
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                            ),
+                          );
+                        }
+
+                        return Text("loading");
+                      },
+                    ),
+                    Padding(padding: EdgeInsets.only(top: 10, bottom: 10)),
+                    FutureBuilder<DocumentSnapshot>(
+                      future: users.doc(uid).get(),
+                      builder: (BuildContext context,
+                          AsyncSnapshot<DocumentSnapshot> snapshot) {
+                        if (snapshot.hasError) {
+                          return Text("Something went wrong");
+                        }
+
+                        if (snapshot.hasData && !snapshot.data!.exists) {
+                          return Text("Document does not exist");
+                        }
+
+                        if (snapshot.connectionState == ConnectionState.done) {
+                          Map<String, dynamic> data =
+                              snapshot.data!.data() as Map<String, dynamic>;
+
+                          return Text("User Name: ${data['Name']}");
+                        }
+
+                        return Text("loading");
+                      },
                     ),
                     Padding(padding: EdgeInsets.only(top: 10, bottom: 10)),
                     Title(
                       color: Colors.blue,
                       child: Text(
-                        "Username : Sanket",
-                        style: TextStyle(),
-                      ),
-                    ),
-                    Padding(padding: EdgeInsets.only(top: 10, bottom: 10)),
-                    Title(
-                      color: Colors.blue,
-                      child: Text(
-                        "Email : sankethake4847@gamil.com",
+                        "Email : ${_auth.currentUser!.email}",
                         style: TextStyle(),
                       ),
                     )
@@ -51,7 +95,7 @@ class MainDrawer extends StatelessWidget {
             ),
             InkWell(
               onTap: () {
-                Navigator.pushNamed(context, "/addproduct");
+                Navigator.pushNamed(context, "/MyAccount");
               },
               child: ListTile(
                 leading: Icon(Icons.account_box_rounded),
@@ -73,6 +117,21 @@ class MainDrawer extends StatelessWidget {
                 tileColor: Colors.blue[200],
                 title: Text(
                   "My Cart",
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
+                ),
+              ),
+            ),
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "/Order");
+              },
+              child: ListTile(
+                leading: Icon(Icons.add_shopping_cart),
+                tileColor: Colors.blue[200],
+                title: Text(
+                  "My Orders",
                   style: TextStyle(
                     fontSize: 17,
                   ),
@@ -106,13 +165,18 @@ class MainDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            ListTile(
-              leading: Icon(Icons.new_releases_rounded),
-              tileColor: Colors.blue[200],
-              title: Text(
-                "About Agventure",
-                style: TextStyle(
-                  fontSize: 17,
+            InkWell(
+              onTap: () {
+                Navigator.pushNamed(context, "/About");
+              },
+              child: ListTile(
+                leading: Icon(Icons.new_releases_rounded),
+                tileColor: Colors.blue[200],
+                title: Text(
+                  "About Agventure",
+                  style: TextStyle(
+                    fontSize: 17,
+                  ),
                 ),
               ),
             ),

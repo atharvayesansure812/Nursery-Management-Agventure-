@@ -1,5 +1,7 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:sanket/app_screen/Nursery_owner/MyNursery.dart';
 import 'package:sanket/model/category.dart';
 
 class O_Nursery_List extends StatefulWidget {
@@ -9,6 +11,7 @@ class O_Nursery_List extends StatefulWidget {
 
 class _O_Nursery_ListState extends State<O_Nursery_List> {
   int selected = -1;
+  FirebaseFirestore db = FirebaseFirestore.instance;
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +22,7 @@ class _O_Nursery_ListState extends State<O_Nursery_List> {
             padding: EdgeInsets.only(right: 8, left: 3),
             child: Text("Select Your Nursery",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 )),
           ),
@@ -34,46 +37,60 @@ class _O_Nursery_ListState extends State<O_Nursery_List> {
           // Lottie.network(
           //     "https://assets8.lottiefiles.com/packages/lf20_ge6ykru0.json"),
 
-          GridView.builder(
-              itemCount: 6,
-              scrollDirection: Axis.vertical,
-              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  crossAxisCount: 2, mainAxisSpacing: 5, crossAxisSpacing: 0),
-              itemBuilder: (context, index) {
-                return GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      selected = index;
+          StreamBuilder(
+              stream: db.collection('Sanket').snapshots(),
+              builder: (context, snapshot) {
+                final Value = (snapshot.data! as QuerySnapshot).docs;
+                return GridView.builder(
+                    itemCount: Value.length,
+                    scrollDirection: Axis.vertical,
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                        mainAxisSpacing: 5,
+                        crossAxisSpacing: 0),
+                    itemBuilder: (context, index) {
+                      return GestureDetector(
+                        onTap: () {
+                          setState(() {
+                            selected = index;
+                          });
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MyNursery(
+                                      NurseryName: Value[index]["NurseryName "],
+                                    )),
+                          );
+                        },
+                        child: Card(
+                            margin: EdgeInsets.all(10),
+                            shape: selected == index
+                                ? RoundedRectangleBorder(
+                                    side: new BorderSide(
+                                        color: Colors.green, width: 3.0),
+                                    borderRadius: BorderRadius.circular(40))
+                                : RoundedRectangleBorder(
+                                    side: new BorderSide(
+                                        color: Colors.white, width: 3.0),
+                                    borderRadius: BorderRadius.circular(40)),
+                            elevation: 20,
+                            shadowColor: Colors.green,
+                            child: GridTile(
+                                // header: Center(
+                                //   child: Text(
+                                //     "Blossom Valley",
+                                //     style: TextStyle(
+                                //         fontSize: 28, fontWeight: FontWeight.bold),
+                                //   ),
+                                // ),
+                                child: Center(
+                                    child: Text(
+                              Value[index]["NurseryName "],
+                              style: TextStyle(
+                                  fontSize: 15, fontWeight: FontWeight.bold),
+                            )))),
+                      );
                     });
-                  },
-                  child: Card(
-                      margin: EdgeInsets.all(10),
-                      shape: selected == index
-                          ? RoundedRectangleBorder(
-                              side: new BorderSide(
-                                  color: Colors.green, width: 3.0),
-                              borderRadius: BorderRadius.circular(40))
-                          : RoundedRectangleBorder(
-                              side: new BorderSide(
-                                  color: Colors.white, width: 3.0),
-                              borderRadius: BorderRadius.circular(40)),
-                      elevation: 20,
-                      shadowColor: Colors.green,
-                      child: GridTile(
-                          // header: Center(
-                          //   child: Text(
-                          //     "Blossom Valley",
-                          //     style: TextStyle(
-                          //         fontSize: 28, fontWeight: FontWeight.bold),
-                          //   ),
-                          // ),
-                          child: Center(
-                              child: Text(
-                        Nursery_Name[index],
-                        style: TextStyle(
-                            fontSize: 15, fontWeight: FontWeight.bold),
-                      )))),
-                );
               }),
     );
   }

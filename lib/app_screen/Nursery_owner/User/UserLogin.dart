@@ -33,7 +33,7 @@ class _login_pageState extends State<login_page> {
       home: Scaffold(
           backgroundColor: Colors.white,
           body: FadeInDownBig(
-            delay: Duration(milliseconds: 700),
+            delay: Duration(milliseconds: 1500),
             child: Container(
               padding: EdgeInsets.only(left: 10, right: 10),
               child: ListView(
@@ -52,16 +52,6 @@ class _login_pageState extends State<login_page> {
                     ],
                   ),
 
-                  // SizedBox(
-                  //   height: 20,
-                  // ),
-                  // Container(
-                  //   child: Text(
-                  //     "User",
-                  //     textAlign: TextAlign.center,
-                  //     style: TextStyle(fontSize: 30),
-                  //   ),
-                  // ),
                   SizedBox(
                     height: 0,
                   ),
@@ -149,7 +139,7 @@ class _login_pageState extends State<login_page> {
                         setState(() async {
                           logincomplete(BuildContext, context);
                           await Future.delayed(Duration(seconds: 1));
-                          Navigator.pushNamed(context, '/location');
+                          Navigator.pushNamed(context, '/Nursery');
                         });
                       } on FirebaseAuthException catch (e) {
                         if (e.code == 'user-not-found') {
@@ -186,9 +176,12 @@ class _login_pageState extends State<login_page> {
                   Container(
                     height: 100,
                     child: InkWell(
-                      onTap: () {
-                        signInWithGoogle(context: context).then((value) =>
-                            Navigator.pushNamed(context, "/location"));
+                      onTap: () async {
+                        signInWithGoogle();
+                        // FirebaseService service = new FirebaseService();
+                        // try {
+                        //   await service.signInwithGoogle();
+                        // } catch (e) {}
                       },
                       child: Image(
                           image: NetworkImage(
@@ -253,10 +246,28 @@ class _login_pageState extends State<login_page> {
   }
 }
 
+Future<UserCredential> signInWithGoogle() async {
+  // Trigger the authentication flow
+  final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+
+  // Obtain the auth details from the request
+  final GoogleSignInAuthentication? googleAuth =
+      await googleUser?.authentication;
+
+  // Create a new credential
+  final credential = GoogleAuthProvider.credential(
+    accessToken: googleAuth?.accessToken,
+    idToken: googleAuth?.idToken,
+  );
+
+  // Once signed in, return the UserCredential
+  return await FirebaseAuth.instance.signInWithCredential(credential);
+}
+
 void logincomplete(BuildContext, Context) {
   var alertDialog = AlertDialog(
-      title: Text("Signed in completed"),
-      content: Text("Now you can Buy a product"));
+      title: Text("Sign in completed"),
+      content: Text("Now you can buy a product"));
 
   showDialog(
       context: Context,
@@ -274,7 +285,7 @@ void NoUser(BuildContext, Context) {
           fontWeight: FontWeight.bold,
         ),
       ),
-      content: Text("No Accout of this Email ID"));
+      content: Text("No account exicted "));
 
   showDialog(
       context: Context,
@@ -288,13 +299,13 @@ void WrongPassword(BuildContext, Context) {
       decoration: BoxDecoration(borderRadius: BorderRadius.circular(30)),
       child: AlertDialog(
         title: Text(
-          'Entered Wrong Password',
+          'Entered wrong password',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
         content: Text(
-          "Please Correct It",
+          "Please correct it ",
           textAlign: TextAlign.center,
         ),
       ));
@@ -306,38 +317,29 @@ void WrongPassword(BuildContext, Context) {
       });
 }
 
-Future<User?> signInWithGoogle({required BuildContext context}) async {
-  FirebaseAuth auth = FirebaseAuth.instance;
-  User? user;
+class FirebaseService {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final GoogleSignIn _googleSignIn = GoogleSignIn();
 
-  final GoogleSignIn googleSignIn = GoogleSignIn();
-
-  final GoogleSignInAccount? googleSignInAccount = await googleSignIn.signIn();
-
-  if (googleSignInAccount != null) {
-    final GoogleSignInAuthentication googleSignInAuthentication =
-        await googleSignInAccount.authentication;
-
-    final AuthCredential credential = GoogleAuthProvider.credential(
-      accessToken: googleSignInAuthentication.accessToken,
-      idToken: googleSignInAuthentication.idToken,
-    );
-
+  Future<String?> signInwithGoogle() async {
     try {
-      final UserCredential userCredential =
-          await auth.signInWithCredential(credential);
-
-      user = userCredential.user;
+      final GoogleSignInAccount? googleSignInAccount =
+          await _googleSignIn.signIn();
+      final GoogleSignInAuthentication googleSignInAuthentication =
+          await googleSignInAccount!.authentication;
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        accessToken: googleSignInAuthentication.accessToken,
+        idToken: googleSignInAuthentication.idToken,
+      );
+      await _auth.signInWithCredential(credential);
     } on FirebaseAuthException catch (e) {
-      if (e.code == 'account-exists-with-different-credential') {
-        // handle the error here
-      } else if (e.code == 'invalid-credential') {
-        // handle the error here
-      }
-    } catch (e) {
-      // handle the error here
+      print(e.message);
+      throw e;
     }
   }
 
-  return user;
+  Future<void> signOutFromGoogle() async {
+    await _googleSignIn.signOut();
+    await _auth.signOut();
+  }
 }

@@ -2,21 +2,27 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
+import 'package:sanket/app_screen/Nursery_owner/MyNursery.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/About_Agventure.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/OrderDetails.dart';
 import 'package:sanket/app_screen/Nursery_owner/Owner_login.dart';
 import 'package:sanket/app_screen/Nursery_owner/Add_Product.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/Myaccout.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/OrderList.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/PlaceOrder.dart';
+import 'package:sanket/app_screen/Nursery_owner/User/Place_Order.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/Reset.dart';
 import 'package:sanket/app_screen/first.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/UserLogin.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/Nursry_Home.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/plants_detail.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/productspage.dart';
-import 'package:sanket/app_screen/Nursery_owner/User/search_By_Plant.dart';
+import 'package:sanket/rough_screen/search_By_Plant.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/Cart.dart';
 import 'package:sanket/rough_screen/productdetail.dart';
 import 'package:sanket/rough_screen/plants.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/registration.dart';
 import 'package:sanket/app_screen/Nursery_owner/User/Search_Appbar.dart';
-// import 'package:sanket/app_screen/Location.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -62,8 +68,14 @@ class MyApp extends StatelessWidget {
             // debugShowCheckedModeBanner: false,
             // initialRoute: '/',
             routes: {
-              '/Cart': (context) => Atharv(),
               '/': (context) => SplashScreen(),
+              '/Cart': (context) => Atharv(),
+              '/Order': (context) => Order(),
+              '/About': (context) => About(),
+
+              '/Place_Order': (context) => Place_Order(),
+
+              '/MyAccount': (context) => MyAccount(),
               '/Login_page_User': (context) => login_page(),
               '/ContactUs': (context) => ContactUs(),
               '/login_page_Owner': (context) => login_page_Owner(),

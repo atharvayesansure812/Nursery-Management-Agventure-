@@ -5,24 +5,25 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:lottie/lottie.dart';
 
 class Nursery_Regestration extends StatelessWidget {
-  @override
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   final CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("Product");
+      FirebaseFirestore.instance.collection("Sanket");
+  @override
   final TextEditingController _textEditingController1 = TextEditingController();
   final TextEditingController _textEditingController2 = TextEditingController();
   final TextEditingController _textEditingController3 = TextEditingController();
   final TextEditingController _textEditingController4 = TextEditingController();
   final TextEditingController _textEditingController5 = TextEditingController();
+  final TextEditingController _textEditingController6 = TextEditingController();
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
           backgroundColor: Colors.green,
           title: Container(
             padding: EdgeInsets.only(right: 8, left: 3),
-            child: Text("NURSERY REGISTRATION",
+            child: Text("Nursery Registration",
                 style: TextStyle(
-                  fontSize: 20,
+                  fontSize: 23,
                   fontWeight: FontWeight.bold,
                 )),
           ),
@@ -86,13 +87,8 @@ class Nursery_Regestration extends StatelessWidget {
                       SizedBox(
                         height: 10,
                       ),
-                      register(
-                          "Nursery Owner / Seller",
-                          "Enter Your Name",
-                          false,
-                          Icon(Icons.person),
-                          "",
-                          _textEditingController1),
+                      register("Nursery Owner / Seller", "Enter Your Name",
+                          false, Icon(Icons.person), _textEditingController1),
                       SizedBox(
                         height: 10,
                       ),
@@ -100,7 +96,7 @@ class Nursery_Regestration extends StatelessWidget {
                         height: 10,
                       ),
                       register("Nursery Name", "Enter Your Nursery Name", false,
-                          Icon(Icons.people), "", _textEditingController2),
+                          Icon(Icons.people), _textEditingController2),
                       SizedBox(
                         height: 10,
                       ),
@@ -109,7 +105,6 @@ class Nursery_Regestration extends StatelessWidget {
                           "Enter Address Of Nursery",
                           false,
                           Icon(Icons.location_city_outlined),
-                          "",
                           _textEditingController3),
                       SizedBox(
                         height: 10,
@@ -119,7 +114,6 @@ class Nursery_Regestration extends StatelessWidget {
                           "Enter Your Contact Information",
                           false,
                           Icon(Icons.contact_page_rounded),
-                          "",
                           _textEditingController4),
                       SizedBox(
                         height: 10,
@@ -129,11 +123,26 @@ class Nursery_Regestration extends StatelessWidget {
                           "Enter Detailed Information About Nursery",
                           false,
                           Icon(Icons.info_outline),
-                          "",
                           _textEditingController5),
+                      SizedBox(
+                        height: 10,
+                      ),
+                      register("Images", "Enter image link of your nursery",
+                          false, Icon(Icons.image), _textEditingController6),
 
                       InkWell(
                         onTap: () {
+                          collectionReference
+                              .doc(_textEditingController2.text)
+                              .set({
+                            "NurseryOwner": _textEditingController1.text,
+                            "NurseryName ": _textEditingController2.text,
+                            "Location ": _textEditingController3.text,
+                            "Contact No":
+                                int.parse(_textEditingController4.text),
+                            "About Nursery": _textEditingController5.text,
+                            "Images": _textEditingController6.text
+                          });
                           SC(BuildContext, context);
                         },
                         child: Container(
@@ -288,7 +297,7 @@ class Nursery_Regestration extends StatelessWidget {
 }
 
 Widget register(String labelText, String hintText, bool x, Icon myicon,
-    String y, TextEditingController z) {
+    TextEditingController z) {
   return Container(
     height: 60,
     width: 380,
@@ -296,9 +305,9 @@ Widget register(String labelText, String hintText, bool x, Icon myicon,
       borderRadius: BorderRadius.circular(10),
     ),
     child: TextFormField(
-      onChanged: (value) {
-        String y = value;
-      },
+      // onChanged: (value) {
+      //   String y = value;
+      // },
       obscureText: x,
       controller: z,
       style: TextStyle(fontSize: 15),

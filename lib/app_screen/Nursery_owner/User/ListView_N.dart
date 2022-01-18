@@ -19,6 +19,7 @@ class homescreen extends StatelessWidget {
     return Scaffold(
         body: Column(
       children: [
+        SizedBox(height: 10),
         slider(),
         SizedBox(height: 10),
         Text(

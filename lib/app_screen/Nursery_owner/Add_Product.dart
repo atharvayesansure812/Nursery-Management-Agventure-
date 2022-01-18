@@ -17,7 +17,7 @@ class Add_Producct extends StatefulWidget {
 class _Add_ProducctState extends State<Add_Producct> {
   FirebaseFirestore firebaseFirestore = FirebaseFirestore.instance;
   final CollectionReference collectionReference =
-      FirebaseFirestore.instance.collection("Product");
+      FirebaseFirestore.instance.collection("Sanket");
   List<String> Nursary = [
     'Blossom Valley',
     'Evergreen',
@@ -26,11 +26,19 @@ class _Add_ProducctState extends State<Add_Producct> {
     'Tanuja Hightech'
   ]; // Option 2
   var SelectedNursery;
+  List<Categoryp> categoryp = [
+    Categoryp(name: "Air Plants"),
+    Categoryp(name: "Indoor Plants"),
+    Categoryp(name: "Avenue Trees"),
+    Categoryp(name: "Aromatic Plants"),
+    Categoryp(name: "Winter Plant"),
+  ];
   List<String> Category = [
-    'Fruit',
-    'Flower',
-    'Vegetable',
-    'Ornamental',
+    "Air Plant",
+    "Indoor Plant",
+    "Avenue Tree",
+    "Aromatic Plant",
+    "Winter Plant"
   ]; // Option 2
   var SelectedCategory; // Option 2
   @override
@@ -48,10 +56,10 @@ class _Add_ProducctState extends State<Add_Producct> {
       appBar: AppBar(
           backgroundColor: Colors.green,
           title: Container(
-            padding: EdgeInsets.only(right: 1, left: 24),
-            child: Text("ADD PRODUCTS",
+            padding: EdgeInsets.only(right: 1, left: 0),
+            child: Text("Add Products",
                 style: TextStyle(
-                  fontSize: 23,
+                  fontSize: 26,
                   fontWeight: FontWeight.bold,
                 )),
           ),
@@ -194,9 +202,10 @@ class _Add_ProducctState extends State<Add_Producct> {
                           textStyle: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.bold)),
                       onPressed: () {
-                        collectionReference.add({
-                          "NurseryName": SelectedNursery,
-                          "Category": SelectedCategory,
+                        collectionReference
+                            .doc(SelectedNursery)
+                            .collection(SelectedCategory)
+                            .add({
                           "ProductName": _productName.text,
                           "ProductImage": _productImage.text,
                           "productprice": int.parse(_productPrice.text),
@@ -204,7 +213,7 @@ class _Add_ProducctState extends State<Add_Producct> {
                         });
                         SAP(BuildContext, context);
                       },
-                      child: Text("Upload product"))),
+                      child: Text("Upload Product"))),
               InkWell(
                 onTap: () {},
                 child: Container(
@@ -231,6 +240,8 @@ class _Add_ProducctState extends State<Add_Producct> {
     );
   }
 }
+
+class _ProductName {}
 
 void SAP(BuildContext, Context) {
   var alertDialog = Container(

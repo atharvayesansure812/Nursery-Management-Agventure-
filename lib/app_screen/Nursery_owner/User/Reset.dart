@@ -13,10 +13,39 @@ class ResetP extends StatelessWidget {
     var email;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
+        elevation: 30,
         title: Text("Reset Password"),
+        shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(
+                bottomLeft: Radius.circular(20),
+                bottomRight: Radius.circular(20))),
       ),
       body: ListView(
         children: [
+          SizedBox(
+            height: 10,
+          ),
+          Center(
+            child: Center(
+              child: Text("Verify Your Email",
+                  style: TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.black)),
+            ),
+          ),
+          SizedBox(
+            height: 15,
+          ),
+          Center(
+            child: Text(
+                "Please enter your Email ID and\n then check your Gmail Account",
+                style: TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black)),
+          ),
           SizedBox(
             height: 10,
           ),
@@ -50,60 +79,22 @@ class ResetP extends StatelessWidget {
                 SizedBox(
                   height: 40,
                 ),
-                // TextFormField(
-                //   // onChanged: (value) {
-                //   //   email = value;
-                //   // },
-                //   obscureText: false,
-                //   style: TextStyle(fontSize: 15),
-                //   decoration: InputDecoration(
-                //       labelText: "Password",
-                //       labelStyle: TextStyle(color: Colors.black),
-                //       prefixIcon: Icon(Icons.password_sharp),
-                //       focusedBorder: OutlineInputBorder(
-                //           borderRadius: BorderRadius.circular(30),
-                //           borderSide:
-                //               BorderSide(color: Colors.amber, width: 2)),
-                //       hintText: "Enter your Password",
-                //       contentPadding: EdgeInsets.symmetric(horizontal: 20)),
-                // ),
-                // SizedBox(
-                //   height: 20,
-                // ),
-                // TextFormField(
-                //   // onChanged: (value) {
-                //   //   email = value;
-                //   // },
-                //   obscureText: false,
-                //   style: TextStyle(fontSize: 15),
-                //   decoration: InputDecoration(
-                //       labelText: "Confirm   Password",
-                //       labelStyle: TextStyle(color: Colors.black),
-                //       prefixIcon: Icon(Icons.password_sharp),
-                //       focusedBorder: OutlineInputBorder(
-                //           borderRadius: BorderRadius.circular(30),
-                //           borderSide:
-                //               BorderSide(color: Colors.amber, width: 2)),
-                //       hintText: "Enter your Password",
-                //       contentPadding: EdgeInsets.symmetric(horizontal: 20)),
-                // ),
-                // SizedBox(
-                //   height: 40,
-                // ),
                 Container(
-                  height: 45,
-                  width: 110,
-                  decoration:
-                      BoxDecoration(borderRadius: BorderRadius.circular(50)),
-                  child: ElevatedButton(
-                      onPressed: () async {
-                        _auth.sendPasswordResetEmail(email: email);
-                        SP(BuildContext, context);
-                        await Future.delayed(Duration(seconds: 3));
-                        Navigator.pushNamed(context, "/");
-                      },
-                      child: Text("Submit")),
-                )
+                  decoration: BoxDecoration(
+                      color: Colors.green,
+                      borderRadius: BorderRadius.circular(50)),
+                  width: 170,
+                  height: 50,
+                  child: Center(
+                    child: Text(
+                      "Submit",
+                      style: TextStyle(
+                          fontSize: 20,
+                          // fontWeight: FontWeight.bold,
+                          color: Colors.white),
+                    ),
+                  ),
+                ),
               ],
             ),
           )

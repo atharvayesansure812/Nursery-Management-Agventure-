@@ -10,12 +10,11 @@ class Categoryp {
 }
 
 List<Categoryp> categoryp = [
-  Categoryp(
-    name: "Fruit",
-  ),
-  Categoryp(name: "Flower"),
-  Categoryp(name: "Vegetable"),
-  Categoryp(name: "Ornamental"),
+  Categoryp(name: "Air Plant"),
+  Categoryp(name: "Indoor Plant"),
+  Categoryp(name: "Avenue Tree"),
+  Categoryp(name: "Aromatic Plant"),
+  Categoryp(name: "Winter Plant"),
 ];
 
 List<CarouselItem> Carousel = [
@@ -47,21 +46,15 @@ List<CarouselItem> Carousel = [
 //   "https://image.shutterstock.com/image-photo/southern-maidenhair-fern-600w-1139335070.jpg"
 // ];
 
-List<String> Nursery_Name = [
-  "Blossom Valey",
-  "Tanuja Hightech\n        Nursery",
-  "Evergreen Nursery",
-  "Paradise Nursery",
-  "Garden Gate",
-  "Harmony"
-];
-final List cart = [
-  "https://upload.wikimedia.org/wikipedia/commons/8/89/Tomato_je.jpg",
-  "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Mango_4.jpg/580px-Mango_4.jpg",
-  "https://images.all-free-download.com/images/graphicthumb/eggplant_01_hq_pictures_168421.jpg",
-  "https://st.depositphotos.com/1642482/2529/i/600/depositphotos_25296471-stock-photo-corn.jpg"
-];
-List<String> cart_Name = ["Tomato", "Mango", "Brinjal", "Corn"];
+// List<String> Nursery_Name = [
+//   "Blossom Valey",
+//   "Tanuja Hightech\n        Nursery",
+//   "Evergreen Nursery",
+//   "Paradise Nursery",
+//   "Garden Gate",
+//   "Harmony"
+// ];
+
 
 // List BlossomValley = [
 //   {
