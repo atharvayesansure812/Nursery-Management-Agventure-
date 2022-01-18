@@ -53,52 +53,52 @@ Tools and technologies that you learnt and used in the project.
 <img src= "https://drive.google.com/uc?export=view&id=1CS7d5IgrUHP5vGraP-EbEgmRvC9KIrd2"  width="250" height="540"/> 
 
 ## FOURTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1iy08rrlVvYbJpahBeBi1REUr0nT-NyoE"  width="250" height="540"/>
 
 ## FIFTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1JgeJlrgdxMcIXkn8PiSq_vYz3ie4h90p"  width="250" height="540"/>
 
 ## SIXTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=18rZh-67B0BgF62tLy5ucT4LgB-Xx9UWC"  width="250" height="540"/>
 
 ## SEVENTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=19tJLkFH-ZqTkP-Mg20NV4tTu1KgvX0K6"  width="250" height="540"/>
 
 ## EIGHTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1k-JtxJU8IhUjont821eGa2gWRwJSONu_"  width="250" height="540"/>
 
 ## NINTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1ARLEDFsCAhXEEjQvV35KghhYSy_CIlTs"  width="250" height="540"/>
 
 ## TENTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1qfzznt8k_CWCZJXV0IxrLshAe5iqdNmh"  width="250" height="540"/>
 
 ## ELEVENTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1RuDNGKpOy8RVes8Wge9fywaNx6HDit6g"  width="250" height="540"/>
 
 ## TWELFTH PAGE
-<img src= "https://drive.google.com/uc?export=view&id="  width="250" height="540"/> 
+<img src= "https://drive.google.com/uc?export=view&id=11LJSnV-VZ5K8t0qomPvFRuT8NHdNx7ZM"  width="250" height="540"/> 
 
 ## THIRTEENTH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1ukaIe7CV2E5ezVnDN-P3nRTyfl-ZGxSD"  width="250" height="540"/>
 
 ## 14TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1ukaIe7CV2E5ezVnDN-P3nRTyfl-ZGxSD"  width="250" height="540"/>
 
 ## 15TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1QbX1vs9gbCkQIjBxDjpHWBNnSzmHV_IR"  width="250" height="540"/>
 
 ## 16TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1lDtk5rNOjNYd5Qu7tYB9BLA8Wn5DS_tJ"  width="250" height="540"/>
 
 ## 17TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1KteSGOw2vfPQRkcNH-Zy7kDkclJQbjDg"  width="250" height="540"/>
 
 ## 18TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+<img src="https://drive.google.com/uc?export=view&id=1dxrCjwgLEE7meUxoJsBO9pTjlRzjHpvp"  width="250" height="540"/>
 
-## 19TH PAGE
-<img src="https://drive.google.com/uc?export=view&id="  width="250" height="540"/>
+## THANK YOU
+<img src="https://drive.google.com/uc?export=view&id=1O82BkAKNyfDuJ031shqiwmHwhoNqkJs9"  width="700" height="175"/>
 
 
 
