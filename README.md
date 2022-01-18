@@ -25,7 +25,7 @@ And this app gives a platform to the farmers and nursery owners to sell their pr
 
 
 * GitHub repo link: [Link to repository](https://github.com/atharvayesansure812/Nursery-Management-Agventure-)
-* Drive link: [Drive link here](https://drive.google.com/drive/folders/1ezwK5srujWD41gDbZ-5r0er55greIEVU?usp=sharing/)
+* Drive link: [Drive link here](https://drive.google.com/drive/folders/1Yvb3krXtYGjWxBVAP9pb3IO2Qi_Rur2b?usp=sharing/)
 
 
 ## Technology stack
