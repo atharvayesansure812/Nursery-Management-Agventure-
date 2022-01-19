@@ -36,6 +36,10 @@ Tools and technologies that you learnt and used in the project.
 2. Framework- Flutter
 3. Firebase
 
+## PROJECT SETUP
+>STEP1: OPEN THIS DRIVE LINK .[Drive link here](https://drive.google.com/drive/folders/1Yvb3krXtYGjWxBVAP9pb3IO2Qi_Rur2b?usp=sharing/)
+>STEP2: INSTALL THE APK FILE.
+>STEP3: NOW YOU CAN USE THE APP.
 ## Applications
 >Agventure will help both the buyer as well as the seller, buyer can buy any products online and can also see which products are present in his nearby nursery . The seller can register in this app and can add his/her nursery and product.
 ## Future scope
