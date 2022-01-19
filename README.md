@@ -42,6 +42,14 @@ Tools and technologies that you learnt and used in the project.
 >STEP2: INSTALL THE APK FILE.
 
 >STEP3: NOW YOU CAN USE THE APP.
+
+## USAGE
+> ON THE HOME PAGE THERE ARE TWO BUTTONS.
+
+
+> FIRST ONE IS FOR BUYER AND SECOND ONE IS FOR USER
+
+
 ## Applications
 >Agventure will help both the buyer as well as the seller, buyer can buy any products online and can also see which products are present in his nearby nursery . The seller can register in this app and can add his/her nursery and product.
 ## Future scope
