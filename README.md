@@ -43,6 +43,9 @@ Tools and technologies that you learnt and used in the project.
 
 >STEP3: NOW YOU CAN USE THE APP.
 
+https://user-images.githubusercontent.com/81099282/150178026-ccdb09bd-00eb-4bc1-b58e-f8149f1fe578.mp4
+
+
 ## USAGE
 > ON THE HOME PAGE THERE ARE TWO BUTTONS.
 
