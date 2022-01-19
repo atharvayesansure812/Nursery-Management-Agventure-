@@ -43,7 +43,7 @@ Tools and technologies that you learnt and used in the project.
 
 >STEP3: NOW YOU CAN USE THE APP.
 
-https://user-images.githubusercontent.com/81099282/150178026-ccdb09bd-00eb-4bc1-b58e-f8149f1fe578.mp4
+https://user-images.githubusercontent.com/81099282/150178957-62027f2f-6de3-4387-a731-0ae1178a1c83.mp4
 
 
 ## USAGE
